@@ -38,6 +38,7 @@
             this.lstContatos = new System.Windows.Forms.ListBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnOrdenar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -127,11 +128,23 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "E-Mail";
             // 
+            // btnOrdenar
+            // 
+            this.btnOrdenar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdenar.Location = new System.Drawing.Point(321, 300);
+            this.btnOrdenar.Name = "btnOrdenar";
+            this.btnOrdenar.Size = new System.Drawing.Size(198, 53);
+            this.btnOrdenar.TabIndex = 10;
+            this.btnOrdenar.Text = "Ordenar";
+            this.btnOrdenar.UseVisualStyleBackColor = true;
+            this.btnOrdenar.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(622, 375);
+            this.Controls.Add(this.btnOrdenar);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lstContatos);
@@ -144,6 +157,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,6 +175,7 @@
         private System.Windows.Forms.ListBox lstContatos;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnOrdenar;
     }
 }
 
